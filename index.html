@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="./js/calculadora.js"></script>
+        <title>Calculadora</title>
+    </head>
+
+    <body>
+        <div class="degrade">
+            <div class="outer-container">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/leonardo-gironde-de-gusmao/" target="_blank"> <i class="fab fa-linkedin"></i></a>
+				    <a href="" target="_blank"><i class="fas fa-globe"></i></a>
+				    <a href="https://github.com/leoggusmao" target="_blank"><i class="fab fa-github"></i></a>
+				    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+				    <a href="mailto:leoggusmao@gmail.com?subject=Fale%20Conosco"><i class="far fa-envelope"></i></a>
+				    <a href="https://wa.me/5521986469696" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        
+            <div class="calculadora">
+                <h2>Calculadora</h2>
+                <p id="resultado"></p>
+                <table>
+                    <tr>
+                        <td><button class="botao" onclick="limpar()">C</button></td>
+                        <td><button class="botao" onclick="voltar()">&lt;</button></td>
+                        <td><button class="botao" onclick="insert('/')">/</button></td>
+                        <td><button class="botao" onclick="insert('*')">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="insert('7')">7</button></td>
+                        <td><button class="botao" onclick="insert('8')">8</button></td>
+                        <td><button class="botao" onclick="insert('9')">9</button></td>
+                        <td><button class="botao" onclick="insert('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="insert('4')">4</button></td>
+                        <td><button class="botao" onclick="insert('5')">5</button></td>
+                        <td><button class="botao" onclick="insert('6')">6</button></td>
+                        <td><button class="botao" onclick="insert('-')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="insert('1')">1</button></td>
+                        <td><button class="botao" onclick="insert('2')">2</button></td>
+                        <td><button class="botao" onclick="insert('3')">3</button></td>
+                        <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
+                        <td><button class="botao" onclick="insert('.')">.</button></td>
+                    </tr>
+                </table>
+            </div>    
+        </div>
+        <footer>
+            Desenvolvido por <a href="https://github.com/leoggusmao" target="_blank">Leonardo Gusmão</a> no curso de Front-End no SENAI, todos os direitos reservados - 2023
+        </footer>
+    </body>
+</html>
